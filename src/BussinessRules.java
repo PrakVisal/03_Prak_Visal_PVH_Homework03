@@ -320,67 +320,6 @@ public class BussinessRules {
             }
         }
     }
-//    public void Display(List<StaffMember> staffMember){
-//        CellStyle cellStyle = new CellStyle(CellStyle.HorizontalAlign.center);
-//        Table t = new Table(9, BorderStyle.UNICODE_ROUND_BOX_WIDE, ShownBorders.ALL);
-//
-//        t.setColumnWidth(0, 30, 30);
-//        t.setColumnWidth(1, 5, 5);
-//        t.setColumnWidth(2, 20, 20);
-//        t.setColumnWidth(3, 10, 10);
-//        t.setColumnWidth(4, 20, 20);
-//        t.setColumnWidth(5, 15, 15);
-//        t.setColumnWidth(6, 10, 10);
-//        t.setColumnWidth(7, 10, 10);
-//        t.setColumnWidth(8, 20, 20);
-//
-//        t.addCell("TYPE"  ,  cellStyle);
-//        t.addCell( "ID"  , cellStyle);
-//        t.addCell( "NAME"  , cellStyle);
-//        t.addCell( "ADDRESS" , cellStyle);
-//        t.addCell( "SALARY"  , cellStyle);
-//        t.addCell( "BONUS"  , cellStyle);
-//        t.addCell( "HOUR"  , cellStyle);
-//        t.addCell( "RATE" , cellStyle);
-//        t.addCell( "PAY"  , cellStyle);
-//
-//        staffMember.forEach(staffData-> {
-//            if(staffData instanceof SalariedEmployee salariedEmployee){
-//                t.addCell("Salaried Employee",cellStyle);
-//                t.addCell(String.valueOf(salariedEmployee.id), cellStyle);
-//                t.addCell(String.valueOf(salariedEmployee.name),cellStyle);
-//                t.addCell(String.valueOf(salariedEmployee.address), cellStyle);
-//                t.addCell(String.valueOf(salariedEmployee.getSalary()),cellStyle);
-//                t.addCell(String.valueOf(salariedEmployee.getBonus()), cellStyle);
-//                t.addCell("---",cellStyle);
-//                t.addCell("---", cellStyle);
-//                t.addCell(String.valueOf(salariedEmployee.pay()),cellStyle);
-//            }else if(staffData instanceof Volunteer volunteer){
-//                t.addCell("Volunteer",cellStyle);
-//                t.addCell(String.valueOf(volunteer.id), cellStyle);
-//                t.addCell(String.valueOf(volunteer.name),cellStyle);
-//                t.addCell(String.valueOf(volunteer.address), cellStyle);
-//                t.addCell(String.valueOf(volunteer.getSalary()),cellStyle);
-//                t.addCell("---", cellStyle);
-//                t.addCell("---",cellStyle);
-//                t.addCell("---", cellStyle);
-//                t.addCell(String.valueOf(volunteer.pay()),cellStyle);
-//            }else if(staffData instanceof HourlySalaryEmployee hourlyEmployee){
-//                t.addCell("Hourly Employee",cellStyle);
-//                t.addCell(String.valueOf(hourlyEmployee.id), cellStyle);
-//                t.addCell(String.valueOf(hourlyEmployee.name),cellStyle);
-//                t.addCell(String.valueOf(hourlyEmployee.address), cellStyle);
-//                t.addCell("---",cellStyle);
-//                t.addCell("---", cellStyle);
-//                t.addCell(String.valueOf(hourlyEmployee.getHourWorked()),cellStyle);
-//                t.addCell(String.valueOf(hourlyEmployee.getRate()), cellStyle);
-//                t.addCell(String.valueOf(hourlyEmployee.pay()),cellStyle);
-//            }
-//        });
-//        System.out.println(t.render());
-//        System.out.print("Press Enter to continue...");
-//        sc.nextLine();
-//    }
     public void Remove(List<StaffMember> staffMember){
         System.out.println("Enter ID to remove : ");
         String idString = sc.nextLine();
