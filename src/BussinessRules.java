@@ -202,16 +202,17 @@ public class BussinessRules {
                                     return;
                                 }
                                 hourlyEmployee.setRate(newRate);
+                                Display(staffMembers.stream().filter(staff -> staff.id == inputId).toList());
                             }else if(staffMember instanceof SalariedEmployee salariedEmployee){
                                 System.out.println("New Bonus : ");
                                 String data = sc.nextLine();
                                 double newBonus = Double.parseDouble(data);
                                 salariedEmployee.setBonus(newBonus);
+                                Display(staffMembers.stream().filter(staff -> staff.id == inputId).toList());
                             }else {
                                 System.out.println("Invalid Selection!");
                             }
                         });
-                        Display(staffMembers.stream().filter(staffMember -> staffMember.id == inputId).toList());
                         break;
                     }
                     case "0":{

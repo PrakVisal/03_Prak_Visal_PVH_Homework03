@@ -11,8 +11,8 @@ import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
-        CellStyle cellStyle = new CellStyle(CellStyle.HorizontalAlign.center);
-        Table t = new Table(1, BorderStyle.UNICODE_ROUND_BOX_WIDE, ShownBorders.ALL);
+        CellStyle cellStyle = new CellStyle(CellStyle.HorizontalAlign.left);
+        Table t = new Table(1, BorderStyle.UNICODE_ROUND_BOX_WIDE, ShownBorders.SURROUND_HEADER_AND_COLUMNS);
         Scanner sc = new Scanner(System.in);
         String option = null;
         BussinessRules bussinessRules = new BussinessRules();
@@ -21,7 +21,7 @@ public class Main {
        staffMemberList.add(new Volunteer(1,"Ching","BMC",150));
        staffMemberList.add(new SalariedEmployee(2,"Kanika","LA",550,20));
        staffMemberList.add(new HourlySalaryEmployee(3,"Nann","PP",8,2));
-        t.setColumnWidth(0,50, 50);
+        t.setColumnWidth(0,23, 23);
         t.addCell("STAFF MANAGEMENT SYSTEM", cellStyle);
         t.addCell("1. Insert Employee", cellStyle);
         t.addCell("2. Update Employee", cellStyle);
